@@ -12,6 +12,17 @@ ScreenShotUtils.request(*Activity*, *SurfaceView*, new ScreenShotUtils.OnScreenS
     }
 });
 ```
+Use for window
+```
+ScreenShotUtils.request(*Activity*, getWindow(), new ScreenShotUtils.OnScreenShotFinishedListener() {
+    @Override
+    public void onScreenShotFinished(int resultCode, Bitmap bitmap) {
+        if(resultCode==ScreenShotUtils.SUCCESS){
+            // Do your code
+        }
+    }
+});
+```
 Use for view
 ```
 ScreenShotUtils.request(*View*, new ScreenShotUtils.OnScreenShotFinishListener() {
