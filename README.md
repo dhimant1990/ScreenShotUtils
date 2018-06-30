@@ -2,7 +2,8 @@
 
 # Uses
 Use for surfaceview
-```ScreenShotUtils.request(*Activity*, *SurfaceView*, new ScreenShotUtils.OnScreenShotFinishedListener() {
+```
+ScreenShotUtils.request(*Activity*, *SurfaceView*, new ScreenShotUtils.OnScreenShotFinishedListener() {
     @Override
     public void onScreenShotFinished(int resultCode, Bitmap bitmap) {
         if(resultCode==ScreenShotUtils.SUCCESS){
@@ -12,7 +13,8 @@ Use for surfaceview
 });
 ```
 Use for view
-```ScreenShotUtils.request(*View*, new ScreenShotUtils.OnScreenShotFinishListener() {
+```
+ScreenShotUtils.request(*View*, new ScreenShotUtils.OnScreenShotFinishListener() {
     @Override
     public void onScreenShotFinished(Bitmap bitmap) {
        // Do your code
