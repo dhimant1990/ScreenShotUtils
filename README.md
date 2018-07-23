@@ -1,5 +1,7 @@
 # ScreenShotUtils
 
+# Require minSdkVersion is 24 in build.gradle.
+
 # Uses
 Use for surfaceview
 ```
